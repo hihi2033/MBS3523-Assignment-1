@@ -23,7 +23,7 @@ cam = cv2.VideoCapture(0)
 
 while True:
     _, img = cam.read()
-    cv2.putText(img, 'MBS3523 Assignment 1b-Q6 Name: Ho Chun Yip', (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 0, 255), 2)
+    cv2.putText(img, 'MBS3523 Assignment 1b-Q6 Name: Yeung Yin Hang', (40, 20), cv2.FONT_HERSHEY_PLAIN, 1, (255, 207, 13), 2)
 
     if EVT == 4:
         cv2.rectangle(img, PNT1, PNT2, (255,0,255), 3)
@@ -38,5 +38,4 @@ while True:
 
     if cv2.waitKey(1) == ord('q'):
         break
-
 cv2.destroyAllWindows()
